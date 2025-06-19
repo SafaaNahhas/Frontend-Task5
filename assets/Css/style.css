@@ -13,7 +13,8 @@
     margin-bottom: 136px;
 }
 .m-header{
-    margin-bottom: 157px;
+    /* margin-bottom: 157px; */
+    margin-bottom: 10.903vw;
     padding-top: 70px;
 }
 .m-hero{
@@ -31,6 +32,12 @@
 .m-b-f{
     margin-bottom:32px;
 }
+.img-carousel{
+    border: 1px solid #DEDCDB80 !important;
+    width :129px !important;
+    height: 130px !important;
+}
+
 /* ******************************** */
 .navbar-brand {
     color: var(--myprimary-color);
@@ -61,18 +68,26 @@
     box-shadow: -10px 0px 20px 0px #8EADD53D !important;
     backdrop-filter: blur(306px) !important; 
 }
+.min-vh-100 {
+  min-height: 100vh !important;
+}
+.p-t-d{
+    padding-top: 56px !important;
+}
 /* ************************************************ */
 .titleSection-padding-top {
     padding-top: 51px !important;
 }
 .title-font-size {
-    font-size: 64px !important;
+    /* font-size: 64px !important; */
+    font-size: 4.444vw !important; 
     line-height: 1;
     letter-spacing: 0;
     color: var(--myprimary-color) !important;
 }
 .p-font-size  {
-    font-size: 18px !important;
+    /* font-size: 18px !important; */
+    font-size: 1.25vw !important;
     line-height: 27.5px;
     letter-spacing: 0;
     color: var(--myprimary-color) !important;
@@ -82,11 +97,12 @@
     border-color: var(--custom-button-color);
     padding: 10px 31px  !important;
     border-radius:8px !important ;
+ 
 }
 .hero-image {
-    max-height: 450px; 
-    width: auto; 
-    object-fit: contain; 
+    max-width: 450px !important ; 
+    height: auto !important ; 
+    object-fit: contain!important ; 
 }
 /* ******************************** */
 .trusted-by-text {
@@ -145,13 +161,15 @@
 }
 .custom-card {
     flex: 0 0 100%;
-    max-width: 100%;
+    width: 345px; 
+    height: 334px;
     box-sizing: border-box;
     padding: 20px ;
-    margin-right: 0;
+    margin-right: 15px;
     background: #F6F6F6;
     border-radius: 20px;
     text-align: center;
+     overflow: auto;
 }
 .p-line-height {
     line-height: 1.3; 
@@ -177,8 +195,8 @@
 }
 .dots label {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 24px;
+    height: 24px;
     margin: 0 4px;
     border-radius: 50%;
     background: #ccc;
@@ -198,7 +216,7 @@
 @media (min-width: 992px) {
     .custom-card {
     flex: 0 0 calc(33.333% - 13.333px);
-    max-width: calc(33.333% - 13.333px);
+    /* max-width: calc(33.333% - 13.333px); */
     margin-right: -25px;
     margin-left: 30px;
 
@@ -206,8 +224,8 @@
 }
 @media (min-width: 992px) {
     #slide1:checked ~ .carousel .slider-inner { transform: translateX(0); }
-    #slide2:checked ~ .carousel .slider-inner { transform: translateX(calc(-33.333% - 20px)); }
-    #slide3:checked ~ .carousel .slider-inner { transform: translateX(calc(-66.666% - 40px)); }
+    #slide2:checked ~ .carousel .slider-inner { transform: translateX(calc(-33.333% - 15px)); } 
+    #slide3:checked ~ .carousel .slider-inner { transform: translateX(calc(-66.666% - 30px)); }
 
     #slide4:checked ~ .carousel .slider-inner {
     transform: translateX(0) !important;
@@ -246,7 +264,9 @@
     font-size: 16px !important;
     }
     .hero-image {
-    max-height: 358px;  
+    max-width: 358px !important ; 
+    height: auto !important ; 
+    object-fit: contain!important ;  
     }
     .trusted-by-text {
     font-size: 14px !important ;
